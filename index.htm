@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--
+Elijah Seals
+ITEC 236
+Southern Illinois University
+Date developed: 2/22/2024
+Date tested: 2/25/2024
+-->
+<html lang="en">
+    <head> <!--Head with meta data and scripts-->
+        <meta charset="utf-8">
+        <link rel="icon" type="image/png" href="images/bike_favicon.png">
+        <title>Rich Bikes 4 Life</title> 
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/slicknav.css"> 
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+        <script src="js/jquery.slicknav.min.js"></script> 
+        <script type="text/javascript"> 
+            $(document).ready(function(){
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"}); 
+            }); 
+        </script>
+
+        <meta name="description" content="A bike shop for the rich by the rich! We have everything you could possibly want. Built to last a lifetime!"> <meta name="keywords" content="Bikes, Rich, Life, Dirt Bike, Road Bike, Mountain Bike, Shop, Store, Rich Bikes 4 Life">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--audio file with autoplay-->
+        <audio autoplay>
+            <source src="audio/disco.mp3">
+        </audio>
+
+    </head>
+    <body>
+        <header>
+        <div class="main-graphic">
+            <a href="index.htm">
+            <img src="images/rich_bike.jpg" alt="Main Graphic" class="default-image">
+            <img src="images/spring_sale.jpg" alt="Hover Image" class="hover-image">
+            </a>
+        </div>
+        <figcaption>Rich Bike's 4 Life</figcaption>    
+        </header> 
+       
+         <!-- Navigation Menu -->
+        <nav id="mobile_menu"></nav> 
+        <nav id="nav_menu"> 
+            <ul>
+                <li><a href="index.htm" class="current">Home</a></li> 
+                <li><a href="sales.htm">Sales</a></li> 
+                <li><a href="rentals.htm" >Rentals</a></li>
+                <li><a href="services.htm" >Services</a></li> 
+                <li><a href="contact.htm" class="lastitem">Contact</a></li>
+            </ul> 
+        </nav>
+        <!-- the rest of the elements below the nav menu-->
+            <h2>Built to Last a Lifetime!</h2>
+            <p class ="first">Our bikes are profesionally built up to the highest standards. We have all sorts of bikes, including but not limited to dirt bikes, mountain bikes, sport bikes, and leisure bikes.</p>
+            <p >Feeling unsure? Check out this excellent review from <strong>US President Joe Biden:</strong></p>
+            <!-- block quote -->
+            <blockquote>I love my sports bike! I've had mine for fourty years, so they really are built to last a lifetime! If I had to pick anyone, I'd pick Rich Bikes 4 Life!
+            </blockquote>
+            <p>Thanks Mr. President! Our selection of bikes is very large, but we have a smaller selection of discounted bikes that changes <strong>monthly.</strong> Here is the <em>January</em> specials:</p>
+            <!-- This is a list of special items for the month of January-->
+            <ol>
+                <li>Common Sports Bike</li> 
+                <li>Dirt Bike</li> <li>Rich Bike</li><li>Super Rich Bike</li>
+            </ol> 
+            <p>Still have questions? Want to buy a bike? Visit our location or contact our representative Elijah Seals via phone number or email.</p> 
+            <address>Phone: 1-838-333-425</address>
+            <address>E-mail: rich4life@gmail.com</address>
+            <address>Location: 1234 Carbondale, IL, 62901.</address>
+            <div class="tenor-gif-embed" data-postid="12837453334557507091" data-share-method="host" data-aspect-ratio="1" data-width="100%"><a href="https://tenor.com/view/otw-gif-12837453334557507091">Otw Sticker</a>from <a href="https://tenor.com/search/otw-stickers">Otw Stickers</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+            <footer> <!--Footer for copyright disclaimer -->
+                <p>&copy; Copyright 2024 Rich Bikes 4 Life. All rights reserved.</p>    
+            </footer>
+     </body>
+
+</html>
