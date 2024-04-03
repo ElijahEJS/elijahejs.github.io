@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- 
+Elijah Seals
+ITEC 236
+Southern Illinois University
+Date developed: 2/22/2024
+Date tested: 2/25/2024
+-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" type="image/png" href="images/bike_favicon.png">
+        <title>Rich Bikes 4 Life Sales</title> 
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/slicknav.css"> 
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+        <script src="js/jquery.slicknav.min.js"></script> 
+        <script type="text/javascript"> 
+            $(document).ready(function(){
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"}); 
+            }); 
+        </script>
+        <meta name="description" content="Sales page for Rich Bikes 4 Life"> <meta name="keywords" content="Bikes, Rich, Life, Dirt Bike, Road Bike, Mountain Bike, Shop, Store, Rich Bikes 4 Life, sales">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <header>
+            <div class="main-graphic">
+            <a href="index.htm">
+            <img src="images/rich_bike.jpg" alt="Main Graphic" class="default-image">
+            <img src="images/spring_sale.jpg" alt="Hover Image" class="hover-image">
+            </a>
+        </div>
+            <figcaption>Rich Bike's 4 Life Sales</figcaption>
+        </header>
+        <!-- Navigation Menu  -->
+        <nav id="mobile_menu"></nav> 
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="index.htm">Home</a></li> 
+                <li><a href="sales.htm"class="current">Sales</a></li> 
+                <li><a href="rentals.htm" >Rentals</a></li>
+                <li><a href="services.htm">Services</a></li> 
+                <li><a href="contact.htm" class="lastitem">Contact</a></li>
+            </ul> 
+        </nav>
+        
+    </body>
+
+</html>

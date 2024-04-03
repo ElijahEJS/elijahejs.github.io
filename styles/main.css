@@ -1,0 +1,240 @@
+/*
+Elijah Seals
+ITEC 236
+Southern Illinois University
+Date developed: 2/22/2024
+Date tested: 2/25/2024
+*/
+
+/*Media queries for mobile layouts*/
+@media only screen and (max-width: 2024px) { 
+    #mobile_menu { display: none; }    
+}
+/* tablet portrait layout (768px to 959px) */
+@media only screen and (max-width: 959px) { 
+    #mobile_menu { display: none; } 
+}
+/* mobile landscape layout (480px to 767px) */ 
+
+/* Media queries for mobile layouts */
+@media only screen and (max-width: 767px) {
+  #mobile_menu {
+    display: block;
+  }
+  #nav_menu {
+    display: none;
+  }
+  header h2 {
+    font-size: 1.375em;
+  }
+  header h3 {
+    font-size: .8125em;
+  }
+  p {
+    font-size: .875em;
+  }
+  article h1,
+  main h2,
+  aside h2 {
+    font-size: 1em;
+  }
+  aside li {
+    font-size: .875em;
+  }
+    .main-graphic {
+        width: 100%;
+    }
+    video {
+        width: 100%;
+    }
+}
+
+/* mobile portrait layout (479px or less) */ 
+
+@media only screen and (max-width: 479px) { 
+    #mobile_menu { display: block; }
+    #nav_menu { display: none; }
+    header h2 { font-size: 1.375em; }  
+    header h3 { font-size: .8125em; }   
+    p { font-size: .875em; }           
+    article h1, main h2, aside h2 
+        { font-size: 1em; }             
+    aside li { font-size: .875em; }  
+    .main-graphic {
+    border-radius: 0; /* Remove border-radius for smaller screens if necessary */
+    width: 100%;
+  }
+    video {
+        width: 100%;
+    }
+  
+}
+
+/* the styles for the elements */ 
+body {
+    
+    font-size: 1em;     
+    width: 90%;          
+    max-width 1024px;
+    background-color: skyblue; /* Blue color for the body */
+    margin: 10px auto;
+    } 
+header { 
+    width: 97.917%;         
+    padding: 10px 1.0417%;
+    clear: both; 
+    font-size: 2em;
+
+
+     }
+
+main {
+    width: 47.917%;          
+    padding: 10px 1.0417%;
+    background-color: #ffffff; /* White for column panel */
+    float: left; }
+
+aside {
+    width: 47.917%;          
+    padding: 10px 1.0417%;
+    background-color: #ffffff; /* White for column panel */
+    float: right; }
+h1 {
+    font-size: 1.75em; 
+    padding: 10px;
+}
+
+h2 {
+    font-size: 1.5em; 
+    padding: 10px;
+} 
+
+h3 {
+    font-size: 1.125em; 
+    padding: 10px;
+} 
+p { 
+    font-size: 1.125em; 
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+blockquote {
+    width: 47.917%;          
+    padding: 10px 1.0417%;
+    float: center; 
+}
+footer { 
+    font-size: .75em;
+    width: 97.917%;   
+    padding: 10px 1.0417%;
+    clear: both; 
+     }
+    
+ul { 
+    
+    padding-left: 10px; } 
+
+li {
+    padding-left: 10px;
+   
+} 
+
+
+/* Navigation css*/
+#nav_menu ul {
+     list-style-type: none; padding: 1em 0;
+     font-size: 1.5em;
+     text-align: left;
+     } 
+#nav_menu ul li { 
+    display: inline; 
+    padding: 0 1em; } 
+#nav_menu ul li a { 
+    font-weight: bold; 
+    color: #ffffff; }
+#nav_menu ul li a.current { text-decoration: none; }
+
+/* Special image CSS for richimage class */
+.richimage img {
+    width: 100%;
+    max-width: 600px;
+    border: 2px solid #B5D3E7;
+    margin: 0;
+    padding: 0;
+    border-radius: 1000px;
+    -moz-border-radius: 1000px;
+    position: relative;
+    right: 10px; 
+    top: 10px; 
+}
+
+/* basic images CSS */
+img {
+    width: 100%;
+    max-width: 600px;
+    position: static;
+}
+/* audio CSS, hides the audio player */
+audio {
+    display: none;
+}
+/*main graphic CSS for the hover image*/
+.main-graphic {
+  position: relative;
+  display: inline-block;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+/* Default image */
+.default-image {
+  display: block;
+  width: 600px; 
+  height: auto;
+  transition: opacity 2s ease; /* transition effect */
+}
+
+/* Hover image */
+.hover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 2s ease; /* transition effect */
+}
+
+/* Hover effects */
+.main-graphic:hover .default-image {
+  opacity: 0;
+}
+
+.main-graphic:hover .hover-image {
+  opacity: 1;
+}
+
+.tenor-gif-embed {
+        max-width: 300px;
+        width: 100%;
+}
+
+table {
+    margin-top: 1em; 
+    margin-bottom: 1em; 
+    padding-top: .5em;
+}
+
+fieldset {
+    margin-top: 1em; 
+    margin-bottom: 1em; 
+    padding-top: .5em;
+    background-color: white;
+} 
+figcaption {
+    display: block;
+    font-weight: bold;
+    font-size: 2.5em;
+    padding-top: .25em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid black;
+}
