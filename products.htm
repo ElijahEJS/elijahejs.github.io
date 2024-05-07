@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--
+Elijah Seals
+ITEC 236
+Southern Illinois University
+Date developed: 5/3/2024
+Date tested: 5/7/2024
+-->
+<html lang="en"> <!--Head section with meta data and javascript-->
+    <head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="/images/historybook.png">
+        <title>Seals History Club</title> 
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/slicknav.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+        <script src="js/jquery.slicknav.min.js"></script> 
+        <script type="text/javascript"> 
+            $(document).ready(function(){
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"}); 
+            }); 
+        </script>
+        <meta name="description" content="Products page of the Seals History Club, shop for all things history!"> <meta name="keywords" content="History, Club, History Club, Seals, Books, Shop, Store, Seminars, Products, Medieval, Classical, Early Modern">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <!--Image slideshow transitions at top of page-->
+        <div class="slideshow-container">
+        <div class="slides fade">
+            <img src="images/historyclublogo.jpg" alt="Slide 1">
+        </div>
+    
+        <div class="slides fade">
+            <img src="images/summersale.jpg" alt="Slide 2">
+        </div>
+    
+        <div class="slides fade">
+            <img src="images/opentopublic.jpg" alt="Slide 3">
+        </div>
+       
+        </div>
+        <br>
+        <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <!--Nav menu-->
+        <nav id="mobile_menu"></nav> 
+        <nav id="nav_menu"> 
+            <ul>
+                <li><a href="main.htm">Home</a></li> 
+                <li><a href="products.htm" class="current">Products</a></li> 
+                <li><a href="seminars.htm" >Seminars</a></li>
+                <li><a href="about.htm" >About Us</a></li> 
+                <li><a href="contact.htm" class="lastitem">Contact Us</a></li>
+            </ul> 
+        </nav>
+        <section> <!--section holds the content of the page-->
+          <h2> Please call us or visit us in person to schedule a delivery/pick-up. Go to the <u>Contact Us</u> page to find our information.</h2>
+        <!-- 1st column  -->
+        <div class="container">
+        <main>
+            <h2>Journals and Writing Supplies</h2>
+            <p>We have blank journals available so you can write whatever you want, and we also have professional writing supply kits.</p>
+            <h2>Maps and Cartography Supplies</h2>
+            <p>Our collection of historical maps is vast, contact us so we can find the right one for you. We also have professional cartography supplies if you wish to make your own.</p>
+            <h2>Children's History Books</h2>
+            <p>Not all history is family-friendly, but our children's books are! We have the <em>For Kids</em> and <em>Captivating Stories</em> book collections in stock. 
+            </p>
+        </main>
+        <!-- 2nd column -->
+        <aside>
+            <h2>Classical and Post-Classical History Books</h2>
+            <p>Our classical history books cover topics such as Ancient Greece, Achaemenid Persia, Egypt, Mesopotamia, and the most fun of all - Alexander the Great! Our post-classical collection mostly deals with the Roman Republic and later the Roman Empire.</p>
+            <h2>Medieval History Books</h2>
+            <p>Our medieval history books focus on feudal Europe and the Arab world. They cover things like the Hundred Years War, the Holy Roman Empire, the Crusades, and the Islamic Caliphate.</p>
+            <h2>Early Modern History Books</h2>
+            <p>Our early modern period history books primarily focus on the colonial powers of France, England, Spain, and the Netherlands, but also cover areas in Asia like India and China. You can find books that cover the New World as well, such as the Aztecs or the Inca.</p>
+        </aside> 
+        </div>
+        </section>
+        <footer> <!--Footer for copyright disclaimer -->
+            <p>&copy; Copyright 2024 Seals History Club. All rights reserved.</p>
+        </footer>
+        <script src="/js/slideshow.js"></script> <!--Javascript at the end of the body so the image slideshow transitions at the top of the page work-->
+    </body>

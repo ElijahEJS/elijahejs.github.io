@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--
+Elijah Seals
+ITEC 236
+Southern Illinois University
+Date developed: 5/1/2024
+Date tested: 5/7/2024
+-->
+<html lang="en"> <!--Head section with meta data and javascript-->
+    <head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="/images/historybook.png">
+        <title>Seals History Club</title> 
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/slicknav.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+        <script src="js/jquery.slicknav.min.js"></script> 
+        <script type="text/javascript"> 
+            $(document).ready(function(){
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"}); 
+            }); 
+        </script>
+        <meta name="description" content="About Us page for the Seals History Club, learn all about the club!"> <meta name="keywords" content="History, Club, History Club, Seals, Books, Shop, Store, Seminars, Products, Medieval, Classical, Early Modern">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+    <body>
+        <!--Image slideshow transitions at top of page-->
+        <div class="slideshow-container">
+        <div class="slides fade">
+            <img src="images/historyclublogo.jpg" alt="Slide 1">
+        </div>
+    
+        <div class="slides fade">
+            <img src="images/summersale.jpg" alt="Slide 2">
+        </div>
+    
+        <div class="slides fade">
+            <img src="images/opentopublic.jpg" alt="Slide 3">
+        </div>
+       
+        </div>
+        <br>
+        <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <!--Nav menu-->
+        <nav id="mobile_menu"></nav> 
+        <nav id="nav_menu"> 
+            <ul>
+                <li><a href="main.htm">Home</a></li> 
+                <li><a href="products.htm">Products</a></li> 
+                <li><a href="seminars.htm">Seminars</a></li>
+                <li><a href="about.htm" class="current">About Us</a></li> 
+                <li><a href="contact.htm" class="lastitem">Contact Us</a></li>
+            </ul> 
+        </nav>
+        <!--Video element to autoplay a muted video-->
+        <video id="videoplayer" 
+               src="video/welcome_video.mp4"
+               autoplay
+               muted
+               controls 
+               width="480" height="270">
+        </video>
+        <section> <!--Section element holds the content of the page-->
+            <h2>Welcome to the Seals History Club</h2>
+            <p>We are delighted that your showing interest in us! Our club was founded way back in 2003, starting off as a small group that would meet at the library. Since then we have grown into a sizeable organization with our very own History Club Learning Center breaking ground in 2008.</p>
+            <p>Pictured below is our core leadership team who organize and schedule events, create community outreach opportunities, and run all of the day-to-day operations. A round of applause for their hard work!</p>
+            <p>You too can join the Seals History Club today, just visit the <u>Contact Us</u> page and get in touch! We are always looking for new members.</p>
+            <img src="images/clubmeeting.jpeg" alt="Club Members"> <!--Image of the club members-->
+        </section>
+        <footer> <!--Footer for copyright disclaimer -->
+            <p>&copy; Copyright 2024 Seals History Club. All rights reserved.</p>
+        </footer>
+        <script src="/js/slideshow.js"></script> <!--Javascript at the end of the body so the image slideshow transitions at the top of the page work-->
+    </body>

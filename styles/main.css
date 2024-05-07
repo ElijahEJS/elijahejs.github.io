@@ -76,7 +76,7 @@ body {
     font-size: 1em;     
     width: 90%;          
     max-width 1024px;
-    background-color: skyblue; /* Blue color for the body */
+    background-color: burlywood; /* Blue color for the body */
     margin: 10px auto;
     } 
 header { 
@@ -87,6 +87,13 @@ header {
 
 
      }
+.container {
+    display: flex;
+}
+
+main, aside {
+    flex: 1;
+}
 
 main {
     width: 47.917%;          
@@ -133,10 +140,11 @@ footer {
     
 ul { 
     
-    padding-left: 10px; } 
+    padding-left: 25px; } 
 
 li {
     padding-left: 10px;
+    padding-bottom: 10px;
    
 } 
 
@@ -237,4 +245,139 @@ figcaption {
     padding-top: .25em;
     margin-bottom: 1em;
     border-bottom: 1px solid black;
+}
+
+/*CSS for the form*/
+
+legend {
+    color: black; 
+    font-weight: bold; 
+    font-size: 1.5em; 
+    margin-bottom: .5em;
+  
+}
+
+label, input, select { 
+    font-size: 90%;
+} 
+
+label {
+    float: left; 
+    width: 12em;
+    text-align: right; 
+}
+
+input  { 
+    float: left; 
+    width: 15em;
+    margin-left: .5em; 
+    margin-bottom: .5em;
+}
+select { 
+    float: left; 
+    width: 15em;
+    margin-left: .5em; 
+    margin-bottom: .5em;
+}
+input:required, input[required] 
+{ 
+    border: 3px solid red;
+} 
+
+input:valid { 
+    border: 1px solid black; 
+} 
+
+input:invalid { 
+    box-shadow: none; 
+} 
+
+br { 
+    clear: both; 
+}
+
+#buttons input { 
+    width: 10em;
+    float: right; 
+    text-align: left;
+} 
+
+radio {
+    float: left; 
+    width: 9em;
+}
+
+section {
+    background-color: white;
+}
+
+
+
+.slideshow-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slides {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+/* Other CSS styles for slides and dots */
+
+/* Hide all slides by default */
+.slides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* The dots */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
 }

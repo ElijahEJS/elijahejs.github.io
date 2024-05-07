@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!--
+Elijah Seals
+ITEC 236
+Southern Illinois University
+Date developed: 5/3/2024
+Date tested: 5/7/2024
+-->
+<html lang="en"> <!--Head section with meta data and javascript-->
+    <head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="/images/historybook.png">
+        <title>Seals History Club</title> 
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/slicknav.css"> 
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+        <script src="js/jquery.slicknav.min.js"></script> 
+        <script type="text/javascript"> 
+            $(document).ready(function(){
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"}); 
+            }); 
+        </script>
+        <meta name="description" content="Seminars page for the Seals History Club, find a seminar for all your favorite history subjects!"> <meta name="keywords" content="History, Club, History Club, Seals, Books, Shop, Store, Seminars, Products, Medieval, Classical, Early Modern">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <!--Image slideshow transitions at top of page-->
+        <div class="slideshow-container">
+        <div class="slides fade">
+            <img src="images/historyclublogo.jpg" alt="Slide 1">
+        </div>
+    
+        <div class="slides fade">
+            <img src="images/summersale.jpg" alt="Slide 2">
+        </div>
+    
+        <div class="slides fade">
+            <img src="images/opentopublic.jpg" alt="Slide 3">
+        </div>
+       
+        </div>
+        <br>
+        <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <!--Nav menu-->
+        <nav id="mobile_menu"></nav> 
+        <nav id="nav_menu"> 
+            <ul>
+                <li><a href="main.htm">Home</a></li> 
+                <li><a href="products.htm">Products</a></li> 
+                <li><a href="seminars.htm" class="current">Seminars</a></li>
+                <li><a href="about.htm" >About Us</a></li> 
+                <li><a href="contact.htm" class="lastitem">Contact Us</a></li>
+            </ul> 
+        </nav>
+        <section>
+         <fieldset> <!--Beginning of the table-->
+        <table>
+                
+                <legend>Seminars</legend> 
+            <p>Listed seminars are for Q1 and Q2 of 2024. More to come! Prices are final. Please message us on the <u>Contact Us</u> page for more information.</p>
+            <!--List of columns-->
+            <tr>
+                <th class="left">Title</th> 
+                <th>Description</th> 
+                <th>Date</th>
+                <th>Time</th>
+                <th>Price</th>
+            </tr>
+            <!--The rest of the tr elements are rows-->
+            <tr>
+                <td class="left">Teaching Children History</td> 
+                <td>Guest speaker Natalie Smith tells parents how they can better teach their children history while avoiding inappropriate/sensitive topics.</td> 
+                <td>January 3rd</td>
+                <td>1PM-3PM</td>
+                <td>None</td>
+            </tr>
+            <tr>
+                <td class="left">The Medieval Ages</td> 
+                <td>Elijah Seals delves into the history of the Medieval ages.</td> 
+                <td>January 28th</td>
+                <td>12PM-1:30PM</td>
+                <td>$25</td>
+            </tr>
+            <tr>
+                <td class="left">How the Colonial Period Changed the World</td> 
+                <td>Jason Hosea talks about how the colonial period created globalism and changed modern society forever.</td> 
+                <td>February 12th</td>
+                <td>2PM-4PM</td>
+                <td>$50</td>
+            </tr>
+            <tr>
+                <td class="left">Worst Wars in History</td> 
+                <td>Elijah Seals describes and ranks the most devastating wars in human history.</td> 
+                <td>February 27th</td>
+                <td>12PM-1:30PM</td>
+                <td>$25</td>
+            </tr>
+            <tr>
+                <td class="left">The Greats</td> 
+                <td>Guest speaker Sarah Willis talks about histories greatest figures, from Alexander the Great to Caesar Augustus and beyond.</td> 
+                <td>March 5th</td>
+                <td>2PM-4PM</td>
+                <td>$50</td>
+            </tr>
+            <tr>
+                <td class="left">Fall of the Romans</td> 
+                <td>Elizabeth Hellen outlines what led to the fall of the Roman Empire, how it continued in the East, and how its legacy continues long after the fall of Constantinople.</td> 
+                <td>May 12th</td>
+                <td>11AM-1:30PM</td>
+                <td>$55</td>
+            </tr>
+            <tr>
+                <td class="left">The Black Plague</td> 
+                <td>Jason Hosea discusses how the Black Plague effected the world and history itself.</td> 
+                <td>June 3rd</td>
+                <td>2PM-3:30PM</td>
+                <td>$35</td>
+            </tr>
+            
+              </table>  
+           
+        </fieldset>  <!--End of the table-->
+        </section>
+        <footer> <!--Footer for copyright disclaimer -->
+            <p>&copy; Copyright 2024 Seals History Club. All rights reserved.</p>
+        </footer>
+        <script src="/js/slideshow.js"></script> <!--Javascript at the end of the body so the image slideshow transitions at the top of the page work-->
+    </body>
